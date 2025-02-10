@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    width: 400px;
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.profile-picture {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.profile-info h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    word-wrap: break-word;
+}
+.nav-section-item {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+.nav-section-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-section-item i {
+    font-size: 35px;
+    margin-right: 25px;
+    flex: 0 0 40px;
+}
+
+.nav-section-item a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    flex: 1;
+}
+.upcoming {
+    position: relative;
+    padding: 10px;
+}
+
+
+.upcoming .submenu {
+    display: none;
+    font-size: 23px;
+    padding-left: 20px; /* adjust to keep alignment */
+}
+.upcoming .submenu li {
+    list-style: none;
+    padding: 15px 0;
+}
+
+.upcoming .submenu.hidden {
+    display: none;
+}
+
+.upcoming .submenu.show {
+    display: block;
+}
+.upcoming span {
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+}
+
+.upcoming i {
+    font-size: 25px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.nav-divider {
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 60px;
+}
+header p {
+    margin-top: 5px;
+    font-size: 24px;
+    color: #000000;
+}
+
+header .actions {
+    margin-left: 20px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .actions {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+.content-header-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.content-header-button .header-button-add,
+.content-header-button .header-button-search,
+.content-header-button .header-button-sort,
+.content-header-button .header-button-more{
+    margin-left: 20px;
+}
+  
+.content-header-button .header-button-add button,
+.content-header-button .header-button-search input{
+    padding: 10px 20px;
+    
+}
+  
+.content-header-button .header-button-sort button,
+.content-header-button .header-button-more button{
+    padding: 10px 0px;
+}
+  
+.content-header-button .header-button-add button{
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 338px;
+    height: 57px;
+    font-size: 25px;
+
+}
+  
+.content-header-button .header-button-add button i{
+    margin-right: 6px;
+    font-size: 25px;
+}
+  
+.content-header-button .header-button-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+   
+}
+  
+.content-header-button .header-button-search input{
+    border: none;
+    background-color: #e3e3e3;
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+    width: 325px;
+    height: 35px;
+    font-size: 25px;
+}
+  
+.content-header-button .header-button-search i {
+    position: absolute;
+    left: 20px;
+    color: #333;
+    font-size: 25px;
+}
+  
+.content-header-button .header-button-sort button,
+.content-header-button .header-button-more button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+
+}
+  
+.content-header-button .header-button-sort button i{
+    margin-right: 6px;
+}
+.tasks, .overdue {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.task {
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.icons i {
+    cursor: pointer;
+    margin-left: 10px;
+}

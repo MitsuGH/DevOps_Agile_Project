@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/auth-app/public/css/home-trail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/auth-app/public/image/background.jpg" alt="profile picture" class="profile-picture">
+                <div class="profile-info">
+                    <h3>jeddhaaaa</h3>
+                    <p>awesawziburating@gmail.com</p>
+                </div>
+            </div>
+            <div class="nav-divider"></div>
+           <nav>
+               <ul>
+                   <li>
+                       <div class="nav-section-item">
+                           <i class="fa-solid fa-house"></i>
+                           <a href="">Dashboard</a>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="nav-section-item">
+                           <i class="fa-solid fa-star"></i>
+                           <a href="">Favorites</a>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="nav-section-item">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <a href="">Completed</a>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="nav-section-item">
+                           <i class="fa-solid fa-bars"></i>
+                           <a href="">Categories</a>
+                       </div>
+                   </li>
+                   <div class="nav-divider"></div>
+                   <li>
+                    <div class="upcoming">
+                        <span>Upcoming <i class="fa-solid fa-caret-down"></i> </span>
+                        <ul class="submenu">
+                            <li>#homework</li>
+                            <li>#assignment</li>
+                        </ul>
+                    </div>
+                    </li>
+               </ul>
+           </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div>
+                    <h1>Today</h1>
+                    <p>Wednesday, 12 January</p>
+                </div>
+                <div class="content-header-button">
+                    <div class="header-button-add">
+                      <button class="add-taskBtn" onclick="openModal()"><i class="fa-solid fa-plus"></i>Add Task</button>
+                    </div>
+                    <div class="header-button-search">
+                      <input type="text" class="search" placeholder="Search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="header-button-sort">
+                      <button class="sortBtn">
+                        <i class="fa-solid fa-sort"></i>
+                        Sort
+                      </button>
+                    </div>
+                    <div class="header-button-more">
+                      <button class="add-taskBtn"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>  
+            </header>
+            
+            <!-- Task List -->
+            <section class="tasks">
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Task 1</span>
+                    <p>⌛ Sat, 25 Jan • ⌛ Fri, 24 Jan</p>
+                    <div class="icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Task 2</span>
+                    <p>⌛ Sat, 25 Jan • ⌛ Fri, 24 Jan</p>
+                    <div class="icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Task 3</span>
+                    <p>⌛ Sat, 25 Jan • ⌛ Fri, 24 Jan</p>
+                    <div class="icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Overdue Section -->
+            <section class="overdue">
+                <h2>Overdue</h2>
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Task 4</span>
+                    <p>⌛ Sat, 25 Jan • ⌛ Fri, 24 Jan</p>
+                    <div class="icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+                <button class="clear-all">Clear All</button>
+            </section>
+        </main>
+    </div>
+    <script src="/auth-app/public/js/script.js"></script>
+</body>
+</html>
