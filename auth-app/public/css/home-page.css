@@ -173,6 +173,73 @@
   margin-right: 6px;
 }
 
+.tasks, .overdue {
+  background: #f4f4f4;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.task {
+  background: #ddd; /* Light gray background */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px; /* Reduced space between tasks */
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+}
+
+.task-info span {
+  margin-left: 10px;
+}
+
+.task-details {
+  margin-left: 10px;
+}
+
+.task-details .task-title {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  background: transparent; /* Remove any background */
+  padding: 0; /* Reve padding */
+  border: none; /* Ensure no border appears */
+  color: inherit; /* Keep default text color */
+  margin-left: 0%;
+}
+
+.task-details .task-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.task-date {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.icons i {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #333;
+}
+
+.icons i:hover {
+  color: #000;
+}
+
+.task-title {
+  font-weight: bold;
+  display: block;
+  margin-left: 10px;
+}
+
 /* Task Panel styles */
 .task-panel {
   display: none;
